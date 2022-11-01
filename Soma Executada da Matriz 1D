@@ -1,0 +1,11 @@
+function runningSum(nums: number[]): number[] {
+    let sum_array = []; // criação de um array vazio
+    let temp_sum = 0;   // criação de um contador
+    
+    for(let i = 0; i < nums.length; i++) {
+        temp_sum+=nums[i];      // soma o valor atual do contador mais o valor que está no respectivo indice
+        sum_array[i]=temp_sum;  // colocar o valor do contador no respectivo indice do array criado
+    }
+    
+    return sum_array;
+}
